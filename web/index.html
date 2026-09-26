@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Facial Emotion Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- MediaPipe Tasks Vision -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision/vision_bundle.mjs"
+        crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Facial Emotion Detection</h1>
+
+        <div class="camera-container">
+
+            <video id="camera" autoplay playsinline>
+            </video>
+
+            <canvas id="output"></canvas>
+
+        </div>
+
+        <p id="status">
+            Loading MediaPipe...
+        </p>
+
+        <button id="startButton">
+            Start Camera
+        </button>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
